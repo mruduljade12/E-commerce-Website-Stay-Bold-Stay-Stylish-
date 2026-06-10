@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comerce Store</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=user_attributes" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mark_email_unread" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=lock" />
+</head>
+
+<body>
+    <!-- This is an header of website it contain (name of website/logo,login and signup button) -->
+    <!-- when the user is login/signup the button are disable and an circular image of user is appear -->
+    <header>
+        <h2>E-Comerce Store</h2>
+        <div>
+            <button id="signUpButton" class="header_buttons">sign up</button>
+            <button id="loginButton" class="header_buttons">login</button>
+        </div>
+    </header>
+
+
+    <!-- This is the navigation section of the website. -->
+    <!-- User can switch page using this navigathin bar. -->
+    <nav class="navigation_bar">
+        <ul>
+            <li class="nav_items">Home</li>
+            <li class="nav_items">Search</li>
+            <li class="nav_items">Cart</li>
+            <li class="nav_items">History</li>
+            <li class="nav_items">Profile</li>
+        </ul>
+    </nav>
+
+
+    <!-- This is login page section user can login by his account -->
+    <div class="login_section" id="loginPage">
+        <div class="login_page">
+            <div class="inner_box">
+                <div class="left">
+                    <h2>Welcome Back</h2>
+                    <p>
+                        Your favorite Dresses and Fashion collections are waiting.
+                        Log in and continue your Fashionable journey.
+                    </p>
+                </div>
+
+                <div class="right">
+                    <h2>Login</h2>
+                    <span class="logo">
+                        <span class="material-symbols-outlined">
+                            user_attributes
+                        </span>
+                    </span>
+                    <p>login account for continue</p>
+                    <div class="user_id">
+                        <span class="user_logo"><span class="material-symbols-outlined">
+                                user_attributes
+                            </span></span>
+                        <input type="text" placeholder="User Id" id="registerUserId">
+                    </div>
+
+                    <div class="l_password">
+                        <span class="password_logo">
+                            <span class="material-symbols-outlined">
+                                lock
+                            </span>
+                        </span>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <button type="button" id="loginAccountBtn" class="loginAccountBtn">Login Account</button>
+                    <div class="switch_page">
+                        <p>Don't have an account?</p>
+                        <p id="goToRegisterPage">Register</p>
+                        <p id="lCancel">cancel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is registeration page section user can register his account -->
+    <div class="registeration_section" id="registerPage">
+        <div class="registeration_page">
+            <div class="inner_box">
+                <div class="left">
+                    <h2>Join the Fashion Journey</h2>
+                    <p>
+                        Create your account and discover delicious recipes, save your favorites,
+                        and explore a world of flavors crafted just for you.
+                    </p>
+                </div>
+
+                <div class="right">
+                    <h2>Create Account</h2>
+                    <span class="logo">
+                        <span class="material-symbols-outlined">
+                            user_attributes
+                        </span>
+                    </span>
+                    <p>create account for continue</p>
+                    <div class="name">
+                        <input type="text" placeholder="First Name" id="firstName">
+                        <input type="text" placeholder="last Name" id="lastName">
+                    </div>
+                    <div class="user_id">
+                        <span class="user_logo"><span class="material-symbols-outlined">
+                                user_attributes
+                            </span></span>
+                        <input type="text" placeholder="User Id" id="registerUserId">
+                    </div>
+                    <div class="email">
+                        <span class="email_logo">
+                            <span class="material-symbols-outlined">
+                                mark_email_unread
+                            </span>
+                        </span>
+                        <input type="email" placeholder="Email" id="registerEmail">
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="policy">
+                        <input type="checkbox" id="isConditionAccepted">
+                        <p>I have accepted all terms and conditions.</p>
+                    </div>
+                    <button type="button" id="createAccountBtn" class="createAccountBtn">Create Account</button>
+                    <div class="switch_page">
+                        <p>Already have an account?</p>
+                        <p id="goToLoginPage">Login</p>
+                        <p id="rCancel">cancel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- introductory section -->
+        <section class="introductory_image">
+            <div class="container">
+                <!-- heading -->
+                <h2>Stay Bold. Stay Stylish.</h2>
+
+                <!-- search bar -->
+                <div class="search_bar">
+                    <input type="text" id="indexPageSearchText" placeholder="search">
+                    <span class="material-symbols-outlined" id="searchSymbolBtn">
+                        search
+                    </span>
+                </div>
+
+                <!-- sujjestion buttons -->
+                <div class="sujjestions">
+                    <button class="search_content" id="womenswearButton">Womenswear</button>
+                    <button class="search_content" id="menswearButton">Menswear</button>
+                    <button class="search_content" id="kidswearButton">Kidswear</button>
+                    <button class="search_content" id="beautyButton">Beauty</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- This is an recent section in which user get the items which he purchase recently -->
+        <section class="categories">
+            <h2>Recent View</h2>
+            <ul class="containers" id="recentBuyItems">
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- This is section for new released items. -->
+        <section class="categories">
+            <h2>New Released</h2>
+            <ul class="containers" id="newReleases">
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- This is section of popular items. -->
+        <section class="categories">
+            <h2>New Released</h2>
+            <ul class="containers" id="popularItems">
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+
+                <li class="content_box">
+                    <img src="introBGImage.jpg" alt="product image">
+                    <div class="content_box_bottom">
+                        <p>name :: product</p>
+                        <p>price :: 900rs</p>
+                        <button class="add_to_cart_btn">ADD</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- This is an footer section of this website -->
+    <footer class="footer">
+        <div class="footer_brand">
+            <h2>E-Commerce Store</h2>
+            <p>Stay Bold. Stay Stylish.</p>
+        </div>
+
+        <div class="footer_content">
+            <div class="footer_links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Search</li>
+                    <li>Cart</li>
+                    <li>Profile</li>
+                </ul>
+            </div>
+
+            <div class="footer_support">
+                <h3>Support</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>FAQs</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer_bottom">
+            <p>© 2026 E-Commerce Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
