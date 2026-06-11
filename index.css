@@ -265,19 +265,13 @@ header div {
 
 .containers {
     display: flex;
-    width: 100%;
+    width: 980px;
     gap: 20px;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
     scrollbar-width: none;
-}
-
-.containers::-webkit-scrollbar {
-    display: none;
 }
 
 /* Product Card */
@@ -298,7 +292,7 @@ header div {
 }
 
 .content_box:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     box-shadow: var(--contentBoxShadowOnHover);
 }
 

@@ -13,32 +13,8 @@ const registerPage = document.getElementById("registerPage");
 //login page
 const loginPage = document.getElementById("loginPage");
 
-
-//left scroll of the products
-const recentBuyItems = document.getElementById("recentBuyItems");
-const newReleases = document.getElementById("newReleases");
-const popularItems = document.getElementById("popularItems");
-
 //check box for terms accepted
 const isConditionAccepted = document.getElementById("isConditionAccepted");
-
-
-//left scroll operations
-recentBuyItems.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    recentBuyItems.scrollLeft += e.deltaY;
-});
-
-newReleases.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    newReleases.scrollLeft += e.deltaY;
-});
-
-popularItems.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    popularItems.scrollLeft += e.deltaY;
-});
-
 
 //login and sign up button operations
 signUpButton.addEventListener("click", (event) => {
