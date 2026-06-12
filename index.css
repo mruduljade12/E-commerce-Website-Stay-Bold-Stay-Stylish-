@@ -98,6 +98,7 @@ header div {
     border-radius: 10px;
     border: none;
     font-family: var(--headerFont);
+    transition: transform 0.3s ease;
 }
 
 .header_buttons:hover {
@@ -140,6 +141,7 @@ header div {
     list-style: none;
     color: var(--navBarTextColor);
     font-family: var(--navBarFont);
+    transition: transform 0.3s ease;
 }
 
 .nav_items:hover {
@@ -217,6 +219,7 @@ header div {
 /* search icon style */
 .material-symbols-outlined:hover {
     transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 .material-symbols-outlined:active {
@@ -240,6 +243,7 @@ header div {
     background-color: var(--sujjestionBGColor);
     font-family: var(--sujjestionFont);
     color: var(--sujjestionTextColor);
+    transition: transform 0.3s ease;
 }
 
 .search_content:hover {
@@ -265,7 +269,7 @@ header div {
 
 .containers {
     display: flex;
-    width: 980px;
+    width: 100%;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
@@ -308,6 +312,11 @@ header div {
 /* Image Zoom Effect */
 .content_box:hover img {
     transform: scale(1.04);
+}
+
+.content_box img:active {
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
 }
 
 .content_box_bottom {
