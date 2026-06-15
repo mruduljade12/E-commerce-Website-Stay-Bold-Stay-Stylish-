@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+    <!-- header html code -->
+    <header>
+        <h2>E-Comerce Store</h2>
+    </header>
+
+    <!-- navigation bar html code -->
+    <nav class="navigation_bar">
+        <ul>
+            <li class="nav_items">Home</li>
+            <li class="nav_items">Search</li>
+            <li class="nav_items">Cart</li>
+            <li class="nav_items">History</li>
+            <li class="nav_items">Profile</li>
+        </ul>
+    </nav>
+
+
+    <!-- main section of cart items -->
+    <main>
+        <!-- cart items -->
+        <section class="cart_items">
+            <ul class="cart_item_list">
+                <li>
+                    <img src="introBG.jpg" alt="image">
+                    <div class="cart_item_data">
+                        <p>name</p>
+                        <p>price</p>
+                    </div>
+                    <div class="item_quantity">
+                        <button id="minusBtn">-</button>
+                        <span id="quantity">0</span>
+                        <button id="plusBtn">+</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- decision making -->
+        <section class="buy_or_cancel">
+            <button class="decision_btn" id="buyBtn">BUY</button>
+            <button class="decision_btn" id="cancelBtn">CANCEL</button>
+        </section>
+    </main>
+</body>
+
+</html>
